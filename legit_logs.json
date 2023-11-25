@@ -1,0 +1,66 @@
+[
+    {
+        "agent": "sensor",
+        "entity": "temperature",
+        "activity": "temperature_publish",
+        "data": {
+            "topic": "temperature/data",
+            "temperature": 100,
+            "timestamp": 18909848,
+            "port": 4535
+        },
+        "relationships": [
+            {"type": "wasAttributedTo", "target": "sensor"},
+            {"type": "wasAssociatedWith", "target": "temperature_publish", "agent": "sensor"},
+            {"type": "wasGeneratedBy", "target": "temperature", "activity": "temperature_publish"}
+        ]
+    },
+    {
+        "agent": "controller",
+        "entity": "subscribed_temperature",
+        "activity": "temperature_subscribe",
+        "data": {
+            "topic": "temperature/data",
+            "temperature": 100,
+            "timestamp": 18909848,
+            "port": 4535
+        },
+        "relationships": [
+            {"type": "wasAttributedTo", "target": "controller"},
+            {"type": "wasAssociatedWith", "target": "temperature_subscribe", "agent": "controller"},
+            {"type": "wasGeneratedBy", "target": "subscribed_temperature", "activity": "temperature_subscribe"}
+        ]
+    },
+    {
+        "agent": "controller",
+        "entity": "alert",
+        "activity": "alert_publish",
+        "data": {
+            "topic": "robots/alert",
+            "alert": "Turn On",
+            "timestamp": 14561,
+            "port": 7854
+        },
+        "relationships": [
+            {"type": "wasAttributedTo", "target": "controller"},
+            {"type": "wasAssociatedWith", "target": "alert_publish", "agent": "controller"},
+            {"type": "wasGeneratedBy", "target": "alert", "activity": "alert_publish"}
+        ]
+    },
+    {
+        "agent": "robotic_arm",
+        "entity": "subscribed_alert",
+        "activity": "alert_subscribe",
+        "data": {
+            "topic": "robots/alert",
+            "alert": "Turn On",
+            "timestamp": 13456,
+            "port": 3453
+        },
+        "relationships": [
+            {"type": "wasAttributedTo", "target": "robotic_arm"},
+            {"type": "wasAssociatedWith", "target": "alert_subscribe", "agent": "robotic_arm"},
+            {"type": "wasGeneratedBy", "target": "subscribed_alert", "activity": "alert_subscribe"}
+        ]
+    }
+]
