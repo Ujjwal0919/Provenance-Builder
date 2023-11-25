@@ -26,6 +26,8 @@ In various systems and applications, it's crucial to ensure the integrity and le
 
 ### Approach
 
+For demonstartion point of view a sensor and robotic arm IIOT systems is 
+
 1. **Default Provenance Model**: The project starts by defining a standard or default data flow model using the `prov` library. This model represents an expected and legitimate flow of data within the system.
 
 2. **Log-Based Provenance Model Generation**: Log files containing system or application activities are processed to create a provenance model specific to these logs. This model encapsulates the data flow derived solely from the observed log activities.
