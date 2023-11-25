@@ -13,8 +13,6 @@
   - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Results](#results)
-- [Contributors](#contributors)
-- [License](#license)
 
 ## Overview
 
@@ -51,4 +49,4 @@ The primary objective of the project is to enhance log analysis methodologies by
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your-username/your-repo.git](https://github.com/Ujjwal0919/Provenance-Builder)
+   git clone https://github.com/Ujjwal0919/Provenance-Builder.git
