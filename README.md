@@ -27,6 +27,9 @@ In various systems and applications, it's crucial to ensure the integrity and le
 
 For demonstartion point of the tool is working on a hypthetical network model consists of a sesnor, controller and robotic arm which communicate on MQTT protocol as shown in below image.
 
+![robotic_Arm](https://github.com/Ujjwal0919/Provenance-Builder/assets/45317789/e1ba12f1-1eaa-47ab-8bdc-629ab00f9732)
+
+
 
 The tools work on the principle of Data Provenance which means any deviation from the normal data flow will flag the anamoly or malicious behaviour in data.
 
@@ -61,5 +64,4 @@ The primary objective of the project is to enhance log analysis methodologies by
    ```bash
    git clone https://github.com/Ujjwal0919/Provenance-Builder.git
 
-### Results
 
