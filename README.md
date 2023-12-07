@@ -11,7 +11,6 @@
 - [Installation & Usage](#installation--usage)
   - [Installation](#installation)
   - [Usage](#usage)
-- [File Structure](#file-structure)
 - [Results](#results)
 
 ## Overview
@@ -26,13 +25,22 @@ In various systems and applications, it's crucial to ensure the integrity and le
 
 ### Approach
 
-For demonstartion point of view a sensor and robotic arm IIOT systems is 
+For demonstartion point of the tool is working on a hypthetical network model consists of a sesnor, controller and robotic arm which communicate on MQTT protocol as shown in below image.
 
-1. **Default Provenance Model**: The project starts by defining a standard or default data flow model using the `prov` library. This model represents an expected and legitimate flow of data within the system.
+
+The tools work on the principle of Data Provenance which means any deviation from the normal data flow will flag the anamoly or malicious behaviour in data.
+
+1. **Default Provenance Model**: The project starts by defining a standard or default data flow model using the `prov` library. This model represents an expected and legitimate flow of data within the system. User first can create a default provenance model which defined how the coming data is expected in the network. 
+
 
 2. **Log-Based Provenance Model Generation**: Log files containing system or application activities are processed to create a provenance model specific to these logs. This model encapsulates the data flow derived solely from the observed log activities.
 
 3. **Comparison and Analysis**: The generated log-based provenance model is then compared against the established default data flow model. Any discrepancies or differences between these models are investigated to determine if the observed data flow aligns with the expected behavior or deviates into potentially malicious patterns.
+
+4. **Policy Check**: User can also create policies and then check if the coming data verifying the policies at each and every data point.
+
+   ![Screenshot from 2023-12-07 14-25-40](https://github.com/Ujjwal0919/Provenance-Builder/assets/45317789/ca1043b9-8b60-41e2-96a7-e77b6f2ca6f8)
+
 
 ### Objective
 
@@ -52,3 +60,6 @@ The primary objective of the project is to enhance log analysis methodologies by
 
    ```bash
    git clone https://github.com/Ujjwal0919/Provenance-Builder.git
+
+### Results
+
