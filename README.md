@@ -55,17 +55,6 @@ The primary objective of the project is to enhance log analysis methodologies by
 - **System Administrators**: To improve understanding and monitoring of data movements within systems.
 - **Application Developers**: To implement enhanced data flow monitoring and security measures in their applications.
 
-## Installation & Usage
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Ujjwal0919/Provenance-Builder.git
-
-   ```bash
-   python3 main.py
 
    
 
