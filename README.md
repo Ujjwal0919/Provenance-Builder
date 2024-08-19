@@ -64,4 +64,9 @@ The primary objective of the project is to enhance log analysis methodologies by
    ```bash
    git clone https://github.com/Ujjwal0919/Provenance-Builder.git
 
+   ```bash
+   python3 main.py
+
+   
+
 
